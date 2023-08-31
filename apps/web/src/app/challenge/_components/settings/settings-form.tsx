@@ -41,6 +41,8 @@ export function SettingsForm() {
     defaultValues: settings,
   });
 
+  console.log(form.formState.errors);
+
   function onSubmit(data: FormSchema) {
     updateSettings(data);
     toast({
